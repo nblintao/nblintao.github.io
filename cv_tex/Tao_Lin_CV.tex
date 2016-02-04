@@ -1,0 +1,318 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+%\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+\usepackage[colorlinks]{hyperref}
+%\renewcommand{\baselinestretch}{2} \normalsize
+%\usepackage{times}
+\name{Tao Lin} % Your name
+
+\address{State Key Lab of CAD\&CG, Zhejiang University \\ 310058 \\ Hangzhou, China} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{http://nblintao.github.io/ \\ (86) 15957445452 \\ nblintao@gmail.com} % Your phone number and email
+
+\begin{document}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+%{\bf Zhejiang University} \hfill { October 2012 - Present} \\ 
+%B.Eng. in Computer Science \& Technology 
+%\hfill {\em Hangzhou, China}
+%\smallskip
+%\\
+\begin{rAwards}
+	{Zhejiang University}
+	{Oct. 2012 - Present}
+	{B.Eng. in Computer Science and Technology} 
+	{Hangzhou, China}
+\end{rAwards}
+{\contentSize
+\begin{tabular}{ll}
+	Overall GPA: & 3.96 / 4.00 (92.45 / 100)\\   %
+	The third year GPA: & 4.00 / 4.00 (94.43 / 100) \\ %
+%	Rank: & $\mathbf{1^{st}}$ in Qizhen Honors Class in Chu Kochen Honors College\\
+%	 & Top 2\% among 196 students
+	%Rank: & $\mathbf{1^{st}}$ in Qizhen Honors Class in Chu Kochen Honors College (Top 2\%)
+	Rank: & $1^{st}$ in Qizhen Honors Class, Chu Kochen Honors College (Top 2\%)
+\end{tabular}
+}
+
+\begin{rAwards}
+	{Hong Kong University of Science and Technology (HKUST)}
+	{Sept. 2015 - Feb. 2016}
+	{Exchange Student for Final Year Project} 
+	{Hong Kong}
+\end{rAwards}
+
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUCLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+	
+	\begin{rPublication}
+		{Mobility Viewer: A Eulerian Approach for Studying Urban Crowd Flow}
+		{Yuxin Ma, \textbf{Tao Lin}, Zhendong Cao, Chen Li, Wei Chen}
+		{IEEE Transactions on Intelligent Transportation Systems. Accepted, 2015.}
+		{\href{http://www.cad.zju.edu.cn/home/vagblog/VAG_Work/tcmime.4202.4455.4674.pdf}{[PDF]}
+			\href{https://youtu.be/m0HgyEsh0tI}{[Video]}}
+		%\item A suite of interactive visualization techniques for exploring crowd flow volumes, directional dynamics and spatiotemporal patterns.
+		%\item A visual analysis approach for inspecting human social relations and their physical movements.
+	\end{rPublication}
+	
+	%------------------------------------------------
+	
+	\begin{rPublication}
+		{TieVis: Visual Analytics of Evolution of Interpersonal Ties}
+		{\textbf{Tao Lin}, Fangzhou Guo, Yingcai Wu, Wei Chen, Biao Zhu, Sidong Wang, Huamin Qu}
+		%	{The 9th IEEE Pacific Visualization Symposium (PacificVis 2016). Submitted.}
+		{IDAVis 2016: Workshop on Intelligent Data Analytics and Visualization. Submitted.}
+		{	\href{http://nblintao.github.io/pdf/TieVis.pdf}{[PDF]}
+			\href{https://youtu.be/xsr4YXOo1WA}{[Video]}
+			\href{https://github.com/nblintao/TieVis}{[Code]}}
+		
+		%\item A new study of the evolution of interpersonal ties for a dynamic network and their co-evolution with the network structure and information diffusion.
+		%\item An edge based analysis framework which helps users identify edges with similar trends, compare edges with different trends, and find the hidden patterns.
+		%\item An interactive visualization system, which allows for multi-perspective exploration and analysis.
+	\end{rPublication}
+	
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rExperience}
+	{Visual Analytics Group, State Key Lab of CAD\&CG}
+	{June 2013 - Aug. 2015}
+	{Research Assistant}
+	{Zhejiang University, China}
+	{{\bf Research Advisor:} Professor Wei Chen {\scriptsize {\href{http://www.cad.zju.edu.cn/home/chenwei/}{[Homepage]}}}}
+\item Administrated a computer cluster with 20 nodes for more than one year.
+\item Processed large-scale data on the group's cluster with Hadoop and Spark for more than one year.
+\item {\bf Project Mobility Viewer} - A visual analytics system supporting situation-aware understanding and visual reasoning of human mobility. 
+{\scriptsize \href{http://www.cad.zju.edu.cn/home/vagblog/VAG_Work/tcmime.4202.4455.4674.pdf}{[PDF]}
+\href{https://youtu.be/m0HgyEsh0tI}{[Video]}}
+\hfill {\em Core Team Member}
+
+\begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, no indentation
+	\itemsep -0.5em	\vspace{-0.5em} % Compress items in list together for aesthetics
+\item Preprocessed tera-scale data on the cluster with Spark.
+\item Designed a distributed algorithm to detect and eliminate ping-pong effects.
+\item Designed and implemented the Flow Volume Analysis Subsystem.
+\item Technique: MapReduce, Hadoop, Spark, Python, JavaScript (D3, WebGL), OpenSteetMap.
+
+\end{list}
+
+
+\item {\bf Project TieVis} - A visual analytics framework and system that enables interactive analysis and exploration of the dynamic changes of interpersonal ties.
+	%	{May 2015 - Oct. 2015}{Project Leader}
+{\scriptsize \href{http://nblintao.github.io/pdf/TieVis.pdf}{[PDF]}
+\href{https://youtu.be/xsr4YXOo1WA}{[Video]}
+\href{https://github.com/nblintao/TieVis}{[Code]}}
+\hfill {\em Project Leader}
+\begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, no indentation
+	\itemsep -0.5em	\vspace{-0.5em} % Compress items in list together for aesthetics		
+	\item Preprocessed the data with Python (Extract, Aggregate, PCA and MDS).	
+	\item Designed and implemented the whole TieVis System.
+	\item Technique: Python(NumPy, SciPy, scikit-learn), JavaScript.
+\end{list}
+
+
+\end{rExperience}
+
+%------------------------------------------------
+
+\begin{rExperience}
+	{Multimedia Technology Research Center}
+	{Sept. 2015 - Feb. 2016}
+	{Visiting Intern}
+	{HKUST, Hong Kong}
+	{{\bf Supervisor:} Professor S.-H. Gary Chan {\scriptsize {\href{http://www.cse.ust.hk/~gchan/}{[Homepage]}}}}
+\item Worked with a team that has been developing Streamphony, a next-generation streaming cloud for large-scale high bit-rate applications over the global Internet; helped turn research results into a practical system for commercial trials.
+\item Implemented the forward error correction (FEC) module with Reed-Solomon codes.
+\item Improved the quality and robustness of the video stream.
+\item Currently developing a data analysis system for the proxy records with HBase.
+\item Technique: C++ (STL, Boost (asynchronous, memory pool and smart pointer)), lock-free programming, code review, unit testing (Google Test, Google Mock), Hadoop (HBase).
+
+\end{rExperience}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors and Awards}
+
+\begin{rAwards}{Google Excellence Scholarship}{2015}
+	{One of 58 bachelor and master's students in Mainland China}{Google Inc.}
+\end{rAwards}
+
+\begin{rAwards}{National Scholarship}{2014 - 2015}{Top 1\% students}{Ministry of Education, China}
+\end{rAwards}
+
+%\begin{rAwards}{First Prize of Excellent Undergraduate Scholarship}{2013 - 2014, 2014 - 2015}{Top 3\% students}{Zhejiang University}
+\begin{rAwards}{First-Class Scholarship for Outstanding Students}{2013 - 2014, 2014 - 2015}{Top 3\% students}{Zhejiang University}
+\end{rAwards}
+
+\begin{rAwards}{Honorable Mention, Interdisciplinary Contest in Modeling}{2015}{}{}
+\end{rAwards}
+
+\begin{rAwards}{Second Prize, Zhejiang University Programming Contest}{2014}{}{}
+\end{rAwards}
+
+\begin{rAwards}{Third Prize, ACM-ICPC China Zhejiang Provincial Programming Contest}{2014}{}{}
+\end{rAwards}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	PROJECT SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Projects}
+
+
+
+\begin{rSubsectionTag}
+	{MiniSQL Database Management System}
+	{Sept. 2014 - Nov. 2014}
+	{Team Leader}
+	{}
+	{Course Project}
+\item Designed and implemented a DBMS, which can create/delete/query tables/indexes/records by interpreting SQL.
+\item Modules: Interpreter, API, Catalog Manager, Record Manager, Index Manager, Buffer Manager.
+\item Technique: C++, Parser, Cache Replacement (LRU), B+ Tree.
+\end{rSubsectionTag}
+
+\begin{rSubsectionTag}
+	{Visual Analysis of Library Data}
+	{Apr. 2014 - May 2015}
+	{Team Leader}
+	{\href{https://youtu.be/MhnXvG_KWZs}{[Video]}
+		\href{https://github.com/nblintao/Visual-Analysis-of-Library-Data}{[Code]}}
+	{Student Research Training Program}
+\item Promoted library users' decision-making by interacting with real records.  
+\item Designed and implemented a visual analysis system.
+\item Technique: JavaScript (D3, Bootstrap, ECharts and jQuery), Python (Django), Oracle Database.
+\end{rSubsectionTag}
+
+
+\begin{rSubsectionTag}
+	{Precomputed Shadow Fields for Dynamic Scenes}
+	{Mar. 2015 - July 2015}
+	{Independent}
+	{\href{https://github.com/nblintao/Precomputed-Shadow-Fields-for-Dynamic-Scenes}{[Code]}}
+	{Course Project}
+\item Implemented a system for rendering dynamic soft shadows based on the methodology outlined in a paper from SIGGRAPH 2005.
+\item Course: Advances in Computer Graphics, Score: 94/100, Instructor: Kun Zhou.
+\item Technique: C++ (DirectX), HLSL, precomputed radius transfer, spherical harmonics.
+\end{rSubsectionTag}
+
+%\begin{rSubsectionTag}
+%	{Teaching Service System}
+%	{March 2015 - July 2015}
+%	{Group Leader}
+%	{\href{https://github.com/nblintao/Score-Management-Subsystem}{[Subsystem Code]}
+%	\href{https://github.com/nblintao/jwb}{[Full Code]}
+%		}
+%	{Course Project}
+%\item Final project for Software Engineering, Score: 94, Instructor: Yue Chen.
+%\item It is a large laboratory project developed by 30 students, using Python and JavaScript, with detailed documents and tests. I am the {\bf leader} of Score Management Subsystem.
+%\end{rSubsectionTag}
+
+
+\begin{rSubsectionTag}{A 3-D Auto-Stereoscopic Front Projection System}{July 2014 - May 2015}{Team Member}{\href{https://youtu.be/ExrAqQ9Radw}{[Video]}}{Challenge Cup Competition}
+\item Worked with a team of optical engineering students to achieve glasses-free 3D by using 60 projectors.
+\item Derived the core mathematical formulas by light field reconstruction principles.
+\item Implemented the prototype with OpenGL.
+\end{rSubsectionTag}
+
+
+
+\end{rSection}
+
+
+%
+%%----------------------------------------------------------------------------------------
+%%	SERVICE SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\begin{rSection}{Service}
+%\begin{rAwards}{Volunteer}{April 2015}{The 8th IEEE Pacific Visualization Symposium}{Hangzhou, China}
+%\end{rAwards}
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & C/C++, JavaScript, Python, Java, MATLAB, Verilog\\
+Libraries \& Frameworks 
+& Visualization (D3, ECharts) \\
+& C++ unit testing (Google Test, Google Mock)\\
+& Computer graphics \& vision (OpenGL, DirectX, WebGL, OpenCV)\\
+Tools & Data science (Hadoop, Spark, Hive, HBase, MySQL)\\
+& Software engineering (Unix Command, Makefile, Git, Phabricator)
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+
+
+
