@@ -1,0 +1,6 @@
+cv_tex
+image
+others
+pdf
+
+and this file
