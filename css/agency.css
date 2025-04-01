@@ -39,11 +39,14 @@ a.active {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
+}
+h4 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 .img-centered {
@@ -280,10 +283,20 @@ header .intro-text .intro-heading {
 section {
   padding: 100px 0;
 }
+
+section#interests {
+  background-color: #ffffff;
+}
+
+section#about {
+  background-color: #eeeeee;
+}
+
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
+  text-transform: none;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -738,4 +751,19 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #33ccff;
+}
+
+.publication-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.publication-item p {
+    margin-bottom: 5px;
+}
+
+.publication-item:last-child {
+    margin-bottom: 0;
 }

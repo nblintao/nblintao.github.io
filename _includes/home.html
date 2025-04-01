@@ -4,13 +4,122 @@
         <div class="intro-text">
             <div class="intro-lead-in">{% t header.intro_lead %}</div>
             <div class="intro-heading">{% t header.intro_heading %}</div>
-            <a href="#interests" class="page-scroll btn btn-xl">{% t header.tell_me_more %}</a>
+            <a href="#experience" class="page-scroll btn btn-xl">{% t header.tell_me_more %}</a>
         </div>
     </div>
 </header>
 
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{% t experience.title %}</h2>
+                <h3 class="section-subheading text-muted">{% t experience.subtitle %}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/XS.jpg' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t experience.education.xs.period %}</h4>
+                                <h4 class="subheading">{% t experience.education.xs.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t experience.education.xs.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/ZJU.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t experience.education.zju.period %}</h4>
+                                <h4 class="subheading">{% t experience.education.zju.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t experience.education.zju.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/CMU.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t experience.education.cmu.period %}</h4>
+                                <h4 class="subheading">{% t experience.education.cmu.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t experience.education.cmu.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/Google.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t experience.education.google.period %}</h4>
+                                <h4 class="subheading">{% t experience.education.google.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t experience.education.google.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/Apple.jpeg' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t experience.education.apple.period %}</h4>
+                                <h4 class="subheading">{% t experience.education.apple.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t experience.education.apple.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/Meta.jpeg' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t experience.education.meta.period %}</h4>
+                                <h4 class="subheading">{% t experience.education.meta.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t experience.education.meta.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Be Part
+                                <br>Of My
+                                <br>Story!</h4>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- interests Section -->
-<section id="interests">
+<section id="interests" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -22,7 +131,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">{% t interests.data_science.title %}</h4>
                 <p class="text-muted">{% t interests.data_science.description %}</p>
@@ -30,7 +139,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">{% t interests.visualization.title %}</h4>
                 <p class="text-muted">{% t interests.visualization.description %}</p>
@@ -38,7 +147,7 @@
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="service-heading">{% t interests.literature.title %}</h4>
                 <p class="text-muted">{% t interests.literature.description %}</p>
@@ -47,8 +156,44 @@
     </div>
 </section>
 
+<!-- Publications Section -->
+<section id="publications">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{% t publications.title %}</h2>
+                <h3 class="section-subheading text-muted">{% t publications.subtitle %}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="publication-item">
+                    <h4><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=99578a3a1d23e6693ef8c0827269742849cc7eb2">{% t publications.papers.mobility.title %}</a></h4>
+                    <p class="text-muted">{% t publications.papers.mobility.authors %}</p>
+                    <p class="text-muted">{% t publications.papers.mobility.venue %}</p>
+                </div>
+                <div class="publication-item">
+                    <h4><a href="https://arxiv.org/pdf/1711.02781">{% t publications.papers.rubystar.title %}</a></h4>
+                    <p class="text-muted">{% t publications.papers.rubystar.authors %}</p>
+                    <p class="text-muted">{% t publications.papers.rubystar.venue %}</p>
+                </div>
+                <div class="publication-item">
+                    <h4><a href="https://arxiv.org/pdf/1901.04452">{% t publications.papers.foundationdb.title %}</a></h4>
+                    <p class="text-muted">{% t publications.papers.foundationdb.authors %}</p>
+                    <p class="text-muted">{% t publications.papers.foundationdb.venue %}</p>
+                </div>
+                <div class="publication-item">
+                    <h4><a href="https://link.springer.com/chapter/10.1007/978-3-319-40259-8_36">{% t publications.papers.tievis.title %}</a></h4>
+                    <p class="text-muted">{% t publications.papers.tievis.authors %}</p>
+                    <p class="text-muted">{% t publications.papers.tievis.venue %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="bg-light-gray">
+<!-- <section id="portfolio" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -115,113 +260,4 @@
             </div>
         </div>
     </div>
-</section>
-
-<!-- About Section -->
-<section id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{% t about.title %}</h2>
-                <h3 class="section-subheading text-muted">{% t about.subtitle %}</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="{{ '/image/logo/XS.jpg' | relative_url }}" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{% t about.education.xs.period %}</h4>
-                                <h4 class="subheading">{% t about.education.xs.school %}</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{% t about.education.xs.description %}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="{{ '/image/logo/ZJU.png' | relative_url }}" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{% t about.education.zju.period %}</h4>
-                                <h4 class="subheading">{% t about.education.zju.school %}</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{% t about.education.zju.description %}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="{{ '/image/logo/CMU.png' | relative_url }}" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{% t about.education.cmu.period %}</h4>
-                                <h4 class="subheading">{% t about.education.cmu.school %}</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{% t about.education.cmu.description %}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="{{ '/image/logo/Google.png' | relative_url }}" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{% t about.education.google.period %}</h4>
-                                <h4 class="subheading">{% t about.education.google.school %}</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{% t about.education.google.description %}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="{{ '/image/logo/Apple.jpeg' | relative_url }}" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{% t about.education.apple.period %}</h4>
-                                <h4 class="subheading">{% t about.education.apple.school %}</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{% t about.education.apple.description %}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="{{ '/image/logo/Meta.jpeg' | relative_url }}" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>{% t about.education.meta.period %}</h4>
-                                <h4 class="subheading">{% t about.education.meta.school %}</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">{% t about.education.meta.description %}</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of My
-                                <br>Story!</h4>
-                        </div>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-</section> 
+</section> --> 

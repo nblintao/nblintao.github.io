@@ -1,11 +1,12 @@
 nav:
   interests: "兴趣"
   projects: "项目"
-  about: "关于"
+  experience: "经历"
+  publications: "论文"
 
 header:
   brand: "林涛"
-  intro_lead: "程序员 & 数据科学家"
+  intro_lead: "程序员 & 创新者"
   intro_heading: "林涛"
   tell_me_more: "了解更多"
 
@@ -13,14 +14,14 @@ interests:
   title: "兴趣"
   subtitle: "我的专业兴趣"
   data_science:
-    title: "数据科学"
-    description: "数据分析、机器学习和大数据处理"
+    title: "AI 基础设施"
+    description: "大规模 AI 系统、分布式训练和模型服务"
   visualization:
-    title: "可视化"
-    description: "数据可视化和视觉分析"
+    title: "分布式系统"
+    description: "分布式计算、容错和系统可靠性"
   literature:
-    title: "文学"
-    description: "阅读和写作"
+    title: "数据库"
+    description: "分布式数据库、事务处理和数据一致性"
 
 projects:
   title: "项目"
@@ -38,8 +39,8 @@ projects:
     title: "MiniSQL"
     description: "用C++实现的迷你数据库管理系统"
 
-about:
-  title: "关于"
+experience:
+  title: "经历"
   subtitle: "我的经历"
   education:
     xs:
@@ -72,4 +73,29 @@ about:
       description: "软件工程师。<br>AI 基础设施"
 
 footer:
-  copyright: "版权所有 &copy; 林涛 2025" 
+  copyright: "版权所有 &copy; 林涛 2025"
+
+publications:
+  title: "论文"
+  subtitle: "我的学术论文"
+  papers:
+    mobility:
+      title: "Mobility viewer: 研究城市人群流动的欧拉方法"
+      authors: "Y Ma, T Lin, Z Cao, C Li, F Wang, W Chen"
+      venue: "IEEE Transactions on Intelligent Transportation Systems 17 (9), 2627-2636, 2015"
+      link: "https://ieeexplore.ieee.org/document/7299595"
+    rubystar:
+      title: "Rubystar: 一个非任务导向的混合模型对话系统"
+      authors: "H Liu, T Lin, H Sun, W Lin, CW Chang, T Zhong, A Rudnicky"
+      venue: "arXiv preprint arXiv:1711.02781, 2017"
+      link: "https://arxiv.org/abs/1711.02781"
+    foundationdb:
+      title: "FoundationDB Record Layer: 一个多租户结构化数据存储"
+      authors: "C Chrysafis, B Collins, S Dugas, J Dunkelberger, M Ehsan, S Gray, et al."
+      venue: "2019 International Conference on Management of Data (SIGMOD '19), 2019"
+      link: "https://dl.acm.org/doi/10.1145/3299869.3319887"
+    tievis:
+      title: "Tievis: 人际关系演化的视觉分析"
+      authors: "T Lin, F Guo, Y Wu, B Zhu, F Zhang, H Qu, W Chen"
+      venue: "E-Learning and Games: 10th International Conference, Edutainment 2016, 2016"
+      link: "https://link.springer.com/chapter/10.1007/978-3-319-40259-1_19" 
