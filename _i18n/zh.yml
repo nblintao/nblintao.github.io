@@ -91,7 +91,7 @@ publications:
       link: "https://arxiv.org/abs/1711.02781"
     foundationdb:
       title: "FoundationDB Record Layer: 一个多租户结构化数据存储"
-      authors: "C Chrysafis, B Collins, S Dugas, J Dunkelberger, M Ehsan, S Gray, et al."
+      authors: "C Chrysafis, B Collins, S Dugas, J Dunkelberger, M Ehsan, S Gray, A Grieser, O Herrnstadt, K Lev-Ari, T Lin, M McMahon, N Schiefer, A Shraer"
       venue: "2019 International Conference on Management of Data (SIGMOD '19), 2019"
       link: "https://dl.acm.org/doi/10.1145/3299869.3319887"
     tievis:
