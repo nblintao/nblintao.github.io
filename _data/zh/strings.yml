@@ -1,0 +1,66 @@
+nav:
+  interests: "兴趣"
+  projects: "项目"
+  about: "关于"
+
+header:
+  intro_lead: "程序员 & 数据科学家"
+  intro_heading: "林涛"
+  tell_me_more: "了解更多"
+
+interests:
+  title: "兴趣"
+  subtitle: "我的专业兴趣"
+  data_science:
+    title: "数据科学"
+    description: "数据分析、机器学习和大数据处理"
+  visualization:
+    title: "可视化"
+    description: "数据可视化和视觉分析"
+  literature:
+    title: "文学"
+    description: "阅读和写作"
+
+projects:
+  title: "项目"
+  subtitle: "我的近期工作"
+  spark:
+    title: "Apache Spark 贡献者"
+    description: "为Spark SQL和结构化流构建监控UI和相关基础设施"
+  tievis:
+    title: "TieVis"
+    description: "人际关系演化的视觉分析系统"
+  mobility:
+    title: "Mobility Viewer"
+    description: "研究城市人群流动的欧拉方法"
+  minisql:
+    title: "MiniSQL"
+    description: "用C++实现的迷你数据库管理系统"
+
+about:
+  title: "关于"
+  subtitle: "我的经历"
+  education:
+    xs:
+      period: "2010 - 2012"
+      school: "宁波效实中学"
+      description: "两年毕业！"
+    zju:
+      period: "2012 - 2016"
+      school: "浙江大学"
+      description: "计算机科学与技术工学学士学位。(GPA: 3.94/4.00) 荣誉：国家奖学金（前1%学生），谷歌优秀奖学金（中国大陆58名本科和硕士生之一)。"
+    hkust:
+      period: "2015"
+      school: "香港科技大学"
+      description: "多媒体技术研究中心访问实习生。(六个月)"
+    cmu:
+      period: "2016 - 2017"
+      school: "卡内基梅隆大学"
+      description: "计算数据科学硕士(MCDS)学生。"
+    google:
+      period: "2017"
+      school: "谷歌"
+      description: "软件工程实习生"
+
+footer:
+  copyright: "版权所有 &copy; 林涛 2016" 

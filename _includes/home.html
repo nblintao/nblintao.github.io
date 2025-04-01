@@ -1,0 +1,213 @@
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">{% t header.intro_lead %}</div>
+            <div class="intro-heading">{% t header.intro_heading %}</div>
+            <a href="#interests" class="page-scroll btn btn-xl">{% t header.tell_me_more %}</a>
+        </div>
+    </div>
+</header>
+
+<!-- interests Section -->
+<section id="interests">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{% t interests.title %}</h2>
+                <h3 class="section-subheading text-muted">{% t interests.subtitle %}</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">{% t interests.data_science.title %}</h4>
+                <p class="text-muted">{% t interests.data_science.description %}</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">{% t interests.visualization.title %}</h4>
+                <p class="text-muted">{% t interests.visualization.description %}</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">{% t interests.literature.title %}</h4>
+                <p class="text-muted">{% t interests.literature.description %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{% t projects.title %}</h2>
+                <h3 class="section-subheading text-muted">{% t projects.subtitle %}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-9 portfolio-item">
+                <a href="https://github.com/apache/spark/pulls?utf8=%E2%9C%93&q=author%3Anblintao%20" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ '/image/SparkUI.png' | relative_url }}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{% t projects.spark.title %}</h4>
+                    <p class="text-muted">{% t projects.spark.description %}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-9 portfolio-item">
+                <a href="https://youtu.be/xsr4YXOo1WA" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ '/image/TieVis_s.jpg' | relative_url }}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{% t projects.tievis.title %}</h4>
+                    <p class="text-muted">{% t projects.tievis.description %}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-9 portfolio-item">
+                <a href="https://youtu.be/m0HgyEsh0tI" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ '/image/MobilityViewer.png' | relative_url }}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{% t projects.mobility.title %}</h4>
+                    <p class="text-muted">{% t projects.mobility.description %}</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-9 portfolio-item">
+                <a href="https://github.com/nblintao/MiniSQL" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ '/image/database.jpg' | relative_url }}" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{% t projects.minisql.title %}</h4>
+                    <p class="text-muted">{% t projects.minisql.description %}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">{% t about.title %}</h2>
+                <h3 class="section-subheading text-muted">{% t about.subtitle %}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/XS.jpg' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t about.education.xs.period %}</h4>
+                                <h4 class="subheading">{% t about.education.xs.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t about.education.xs.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/ZJU.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t about.education.zju.period %}</h4>
+                                <h4 class="subheading">{% t about.education.zju.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t about.education.zju.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/HKUST.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t about.education.hkust.period %}</h4>
+                                <h4 class="subheading">{% t about.education.hkust.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t about.education.hkust.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/CMU.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t about.education.cmu.period %}</h4>
+                                <h4 class="subheading">{% t about.education.cmu.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t about.education.cmu.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{ '/image/logo/Google.png' | relative_url }}" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{% t about.education.google.period %}</h4>
+                                <h4 class="subheading">{% t about.education.google.school %}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">{% t about.education.google.description %}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Be Part
+                                <br>Of My
+                                <br>Story!</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section> 
