@@ -61,7 +61,15 @@ about:
     google:
       period: "2017"
       school: "谷歌"
-      description: "软件工程实习生"
+      description: "软件工程实习生。"
+    apple:
+      period: "2018-2022"
+      school: "苹果"
+      description: "软件工程师。<br>构建开源分布式数据库（FoundationDB 和 Record Layer），并用它们构建苹果的多租户云后端服务（CloudKit），服务数十亿用户，处理 PB 级数据，每秒处理数百万请求。"
+    meta:
+      period: "2022-至今"
+      school: "Meta"
+      description: "软件工程师。<br>AI 基础设施"
 
 footer:
-  copyright: "版权所有 &copy; 林涛 2016" 
+  copyright: "版权所有 &copy; 林涛 2025" 

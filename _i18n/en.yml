@@ -61,7 +61,15 @@ about:
     google:
       period: "2017"
       school: "Google"
-      description: "Software Engineering Intern"
+      description: "Software Engineering Intern."
+    apple:
+      period: "2018-2022"
+      school: "Apple"
+      description: "Software Engineer.<br>Built open-source distributed databases (FoundationDB and Record Layer), and used them to build Apple's multi-tenant cloud backend service (CloudKit) that serves billions of users, petabytes of data, and millions of requests per second."
+    meta:
+      period: "2022-Present"
+      school: "Meta"
+      description: "Software Engineer.<br>AI Infrastructure"
 
 footer:
-  copyright: "Copyright &copy; Tao Lin 2016" 
+  copyright: "Copyright &copy; Tao Lin 2025" 
