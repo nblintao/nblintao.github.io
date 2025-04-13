@@ -2,6 +2,15 @@
 
 [Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
 
+## Running Locally with Jekyll
+
+The primary way to run and preview this project locally is using Jekyll:
+
+1.  **Install Dependencies:** Make sure you have Ruby and Bundler installed. Then, run `bundle install` in the project's root directory to install the necessary Ruby gems.
+2.  **Start the Server:** Run `bundle exec jekyll serve`. This will build the site and start a local web server, usually accessible at `http://localhost:4000`. The server will automatically watch for changes in most content files and rebuild the site.
+
+*Note: This method relies on pre-compiled CSS and JavaScript files being present in the repository. For front-end development involving Sass/JS changes, see the Gulp section below.*
+
 ## Getting Started
 
 Several options are available to get started quickly:
