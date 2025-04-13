@@ -11,8 +11,8 @@ header:
   tell_me_more: "了解更多"
 
 interests:
-  title: "兴趣"
-  subtitle: "我的专业兴趣"
+  title: 专业兴趣
+  subtitle: 专注领域与技术专长
   data_science:
     title: "AI 基础设施"
     description: "大规模 AI 系统、分布式训练和模型服务"
@@ -98,4 +98,20 @@ publications:
       title: "Tievis: 人际关系演化的视觉分析"
       authors: "T Lin, F Guo, Y Wu, B Zhu, F Zhang, H Qu, W Chen"
       venue: "E-Learning and Games: 10th International Conference, Edutainment 2016, 2016"
-      link: "https://link.springer.com/chapter/10.1007/978-3-319-40259-1_19" 
+      link: "https://link.springer.com/chapter/10.1007/978-3-319-40259-1_19"
+
+hobbies:
+  title: 业余爱好
+  subtitle: 休闲活动与爱好
+  reading:
+    title: 阅读写作
+    description: '我的博客文章见 <a href="https://qcngt.com" target="_blank" rel="noopener noreferrer">青菜年糕汤</a>。'
+  calligraphy:
+    title: 书法
+    description: '我的书法作品集<a href="{{ ''/calligraphy/'' | relative_url }}">在此</a>。'
+  badminton:
+    title: 羽毛球
+    description: '享受快节奏的羽球运动。'
+  drums:
+    title: 架子鼓
+    description: '练习节奏与节拍。'

@@ -11,8 +11,8 @@ header:
   tell_me_more: "Tell Me More"
 
 interests:
-  title: "Interests"
-  subtitle: "My professional interests"
+  title: Professional Interests
+  subtitle: Areas of Focus & Expertise
   data_science:
     title: "AI Infrastructure"
     description: "Large-scale AI systems, distributed training and model serving"
@@ -98,4 +98,20 @@ publications:
       title: "Tievis: Visual analytics of evolution of interpersonal ties"
       authors: "T Lin, F Guo, Y Wu, B Zhu, F Zhang, H Qu, W Chen"
       venue: "E-Learning and Games: 10th International Conference, Edutainment 2016, 2016"
-      link: "https://link.springer.com/chapter/10.1007/978-3-319-40259-1_19" 
+      link: "https://link.springer.com/chapter/10.1007/978-3-319-40259-1_19"
+
+hobbies:
+  title: Hobbies
+  subtitle: Leisure Activities & Pastimes
+  reading:
+    title: Reading & Writing
+    description: 'Read my blog posts at <a href="https://qcngt.com" target="_blank" rel="noopener noreferrer">青菜年糕汤</a>.'
+  calligraphy:
+    title: Calligraphy
+    description: 'View my calligraphy works <a href="{{ ''/calligraphy/'' | relative_url }}">here</a>.'
+  badminton:
+    title: Badminton
+    description: 'Enjoying the fast-paced shuttlecock sport.'
+  drums:
+    title: Drumming
+    description: 'Practicing rhythms and beats.'
