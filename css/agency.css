@@ -754,14 +754,20 @@ body {
 }
 
 .publication-item {
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 25px;
+    padding: 18px 22px;
     background-color: #f8f9fa;
     border-radius: 5px;
 }
 
+.publication-item h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
 .publication-item p {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+    line-height: 1.4;
 }
 
 .publication-item:last-child {

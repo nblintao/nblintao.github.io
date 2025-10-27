@@ -70,7 +70,7 @@ experience:
     meta:
       period: "2022-至今"
       school: "Meta"
-      description: "软件工程师。<br>AI 基础设施"
+      description: "软件工程师。<br>AI 基础设施, Meta 超级智能实验室 (MSL) 基础设施"
 
 footer:
   copyright: "版权所有 &copy; 林涛 2025"
@@ -99,6 +99,11 @@ publications:
       authors: "T Lin, F Guo, Y Wu, B Zhu, F Zhang, H Qu, W Chen"
       venue: "E-Learning and Games: 10th International Conference, Edutainment 2016, 2016"
       link: "https://link.springer.com/chapter/10.1007/978-3-319-40259-1_19"
+    monarch:
+      title: "介绍 PyTorch Monarch"
+      authors: "Meta PyTorch 团队"
+      venue: "PyTorch 博客, 2025年10月"
+      link: "https://pytorch.org/blog/introducing-pytorch-monarch/"
 
 hobbies:
   title: 业余爱好
