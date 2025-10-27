@@ -1,52 +1,108 @@
-# Claude 项目指南
+# Claude Project Guide
 
-这是一个基于 Jekyll 的个人网站项目。
+This is a personal website project built with Node.js (migrated from Jekyll).
 
-## 构建网站
-
-```bash
-bundle exec jekyll build
-```
-
-构建完成后,静态文件会生成在 `_site/` 目录下。
-
-## 本地预览
-
-构建后启动本地服务器:
+## Build the Website
 
 ```bash
-cd _site && python3 -m http.server 8000
+npm run build
 ```
 
-然后在浏览器访问:
-- 英文版: http://localhost:8000
-- 中文版: http://localhost:8000/zh/
+After building, static files will be generated in the `_site/` directory.
 
-## 修改内容
+## Local Preview
 
-### 修改文本内容
+After building, start a local server:
 
-编辑以下文件:
-- 英文内容: `_i18n/en.yml`
-- 中文内容: `_i18n/zh.yml`
+```bash
+npm run serve
+```
 
-### 修改 HTML 结构
+Or use the combined command:
 
-编辑 `_includes/home.html` 文件来修改页面结构。
+```bash
+npm run dev
+```
 
-### 修改样式
+Then visit in browser:
+- English version: http://localhost:8000
+- Chinese version: http://localhost:8000/zh/
 
-**重要**: 网站使用压缩的 CSS 文件 `css/agency.min.css`，而不是 `css/agency.css`。
+## Modify Content
 
-修改样式的正确流程:
-1. 编辑 `css/agency.css` (方便阅读和维护)
-2. 同步修改 `css/agency.min.css` (网站实际使用的文件)
-3. 运行 `bundle exec jekyll build` 重新构建
-4. 刷新浏览器时按 `Cmd + Shift + R` 强制清除缓存
+### Modify Text Content
 
-**注意**:
-- HTML 中引用的是 `agency.min.css`，所以必须同时更新这个文件
-- 本项目的 gulp 构建工具版本较旧，无法在新版 Node.js 上运行，因此需要手动同步两个 CSS 文件
-- 浏览器会缓存 CSS，修改后务必强制刷新才能看到效果
+Edit the following files:
+- English content: `_i18n/en.yml`
+- Chinese content: `_i18n/zh.yml`
 
-修改后重新构建网站即可看到效果。
+### Modify HTML Structure
+
+Edit files in `_includes/` directory:
+- `_includes/header.html` - Navigation header
+- `_includes/home.html` - Home page content
+- `_includes/footer.html` - Footer
+
+### Modify Styles
+
+**Important**: The website uses minified CSS file `css/agency.min.css`, which is automatically generated from `css/agency.css` during build.
+
+Correct workflow for modifying styles:
+1. Edit `css/agency.css` (the source file)
+2. Run `npm run build` to rebuild - this will automatically generate the minified version
+3. Press `Cmd + Shift + R` in browser to force cache refresh
+
+**Note**:
+- The build script automatically minifies `css/agency.css` → `css/agency.min.css` using CSSO
+- Do NOT manually edit `css/agency.min.css` - it will be overwritten during build
+- Browsers cache CSS, so always force refresh after modifications to see changes
+
+## Build System
+
+The website uses a custom Node.js build script (`build/index.js`) that:
+1. Loads translations from YAML files (`_i18n/en.yml` and `_i18n/zh.yml`)
+2. Processes HTML templates in `_includes/` directory
+3. Replaces `{{ t('key') }}` with translated text
+4. Generates separate pages for English and Chinese versions
+5. Minifies CSS (`css/agency.css` → `css/agency.min.css`) using CSSO
+6. Copies static assets (JS, images, etc.)
+7. Generates SEO files (sitemap.xml, feed.xml, robots.txt)
+
+Template syntax:
+- Translations: `{{ t('key.path') }}`
+- Conditional logic: `{% if condition %} ... {% else %} ... {% endif %}`
+- Relative URLs: `{{ '/path' | relative_url }}`
+
+## Deployment
+
+The website automatically deploys to GitHub Pages via GitHub Actions (`.github/workflows/nodejs.yml`) when you push to the master branch.
+
+The workflow:
+1. Checks out code
+2. Sets up Node.js 20
+3. Installs dependencies with `npm ci`
+4. Runs `npm run build`
+5. Deploys to GitHub Pages
+
+## Development
+
+### Requirements
+- Node.js 18+ (recommended 20+)
+- npm
+
+### Install Dependencies
+```bash
+npm install
+```
+
+### Build Process
+The build script is located at `build/index.js`. It's a simple Node.js script that doesn't require complex build tools - just reads templates, processes translations, and generates static HTML files.
+
+Key dependencies:
+- `js-yaml` - Parse YAML translation files
+- `fs-extra` - File system operations
+- `csso` - CSS minification
+- `glob` - File pattern matching (not currently used but available)
+- `nunjucks` - Template engine (installed but build uses simple string replacement)
+
+After modifications, rebuild the website to see changes.

@@ -6,7 +6,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">{% t header.brand %}</a>
+            <a class="navbar-brand page-scroll" href="#page-top">{{ t('header.brand') }}</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,22 +16,22 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#experience">{% t nav.experience %}</a>
+                    <a class="page-scroll" href="#experience">{{ t('nav.experience') }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#interests">{% t interests.title %}</a>
+                    <a class="page-scroll" href="#interests">{{ t('interests.title') }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#publications">{% t publications.title %}</a>
+                    <a class="page-scroll" href="#publications">{{ t('publications.title') }}</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#hobbies">{% t hobbies.title %}</a>
+                    <a class="page-scroll" href="#hobbies">{{ t('hobbies.title') }}</a>
                 </li>
                 <li>
-                    {% if site.lang == "en" %}
+                    {% if lang == "en" %}
                     <a href="{{ '/zh/' | relative_url }}">中文</a>
                     {% else %}
-                    <a href="{{ '/en/' | relative_url }}">EN</a>
+                    <a href="{{ '/' | relative_url }}">EN</a>
                     {% endif %}
                 </li>
             </ul>

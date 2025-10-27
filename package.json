@@ -1,0 +1,21 @@
+{
+  "name": "nblintao.github.io",
+  "version": "1.0.0",
+  "description": "[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/index.js",
+    "serve": "PORT=8000; PIDS=$(lsof -ti:$PORT); if [ -n \\\"$PIDS\\\" ]; then kill -9 $PIDS; fi; cd _site && python3 -m http.server $PORT",
+    "dev": "npm run build && npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csso": "^5.0.5",
+    "fs-extra": "^11.3.2",
+    "glob": "^11.0.3",
+    "js-yaml": "^4.1.0",
+    "nunjucks": "^3.2.4"
+  }
+}

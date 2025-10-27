@@ -2,9 +2,9 @@
 <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">{% t header.intro_lead %}</div>
-            <div class="intro-heading">{% t header.intro_heading %}</div>
-            <a href="#experience" class="page-scroll btn btn-xl">{% t header.tell_me_more %}</a>
+            <div class="intro-lead-in">{{ t('header.intro_lead') }}</div>
+            <div class="intro-heading">{{ t('header.intro_heading') }}</div>
+            <a href="#experience" class="page-scroll btn btn-xl">{{ t('header.tell_me_more') }}</a>
         </div>
     </div>
 </header>
@@ -14,8 +14,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{% t experience.title %}</h2>
-                <h3 class="section-subheading text-muted">{% t experience.subtitle %}</h3>
+                <h2 class="section-heading">{{ t('experience.title') }}</h2>
+                <h3 class="section-subheading text-muted">{{ t('experience.subtitle') }}</h3>
             </div>
         </div>
         <div class="row">
@@ -27,11 +27,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{% t experience.education.xs.period %}</h4>
-                                <h4 class="subheading">{% t experience.education.xs.school %}</h4>
+                                <h4>{{ t('experience.education.xs.period') }}</h4>
+                                <h4 class="subheading">{{ t('experience.education.xs.school') }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{% t experience.education.xs.description %}</p>
+                                <p class="text-muted">{{ t('experience.education.xs.description') }}</p>
                             </div>
                         </div>
                     </li>
@@ -41,11 +41,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{% t experience.education.zju.period %}</h4>
-                                <h4 class="subheading">{% t experience.education.zju.school %}</h4>
+                                <h4>{{ t('experience.education.zju.period') }}</h4>
+                                <h4 class="subheading">{{ t('experience.education.zju.school') }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{% t experience.education.zju.description %}</p>
+                                <p class="text-muted">{{ t('experience.education.zju.description') }}</p>
                             </div>
                         </div>
                     </li>
@@ -55,11 +55,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{% t experience.education.cmu.period %}</h4>
-                                <h4 class="subheading">{% t experience.education.cmu.school %}</h4>
+                                <h4>{{ t('experience.education.cmu.period') }}</h4>
+                                <h4 class="subheading">{{ t('experience.education.cmu.school') }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{% t experience.education.cmu.description %}</p>
+                                <p class="text-muted">{{ t('experience.education.cmu.description') }}</p>
                             </div>
                         </div>
                     </li>
@@ -69,11 +69,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{% t experience.education.google.period %}</h4>
-                                <h4 class="subheading">{% t experience.education.google.school %}</h4>
+                                <h4>{{ t('experience.education.google.period') }}</h4>
+                                <h4 class="subheading">{{ t('experience.education.google.school') }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{% t experience.education.google.description %}</p>
+                                <p class="text-muted">{{ t('experience.education.google.description') }}</p>
                             </div>
                         </div>
                     </li>
@@ -83,11 +83,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{% t experience.education.apple.period %}</h4>
-                                <h4 class="subheading">{% t experience.education.apple.school %}</h4>
+                                <h4>{{ t('experience.education.apple.period') }}</h4>
+                                <h4 class="subheading">{{ t('experience.education.apple.school') }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{% t experience.education.apple.description %}</p>
+                                <p class="text-muted">{{ t('experience.education.apple.description') }}</p>
                             </div>
                         </div>
                     </li>
@@ -97,11 +97,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>{% t experience.education.meta.period %}</h4>
-                                <h4 class="subheading">{% t experience.education.meta.school %}</h4>
+                                <h4>{{ t('experience.education.meta.period') }}</h4>
+                                <h4 class="subheading">{{ t('experience.education.meta.school') }}</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">{% t experience.education.meta.description %}</p>
+                                <p class="text-muted">{{ t('experience.education.meta.description') }}</p>
                             </div>
                         </div>
                     </li>
@@ -123,8 +123,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{% t interests.title %}</h2>
-                <h3 class="section-subheading text-muted">{% t interests.subtitle %}</h3>
+                <h2 class="section-heading">{{ t('interests.title') }}</h2>
+                <h3 class="section-subheading text-muted">{{ t('interests.subtitle') }}</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -133,24 +133,24 @@
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">{% t interests.data_science.title %}</h4>
-                <p class="text-muted">{% t interests.data_science.description %}</p>
+                <h4 class="service-heading">{{ t('interests.data_science.title') }}</h4>
+                <p class="text-muted">{{ t('interests.data_science.description') }}</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-sitemap fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">{% t interests.visualization.title %}</h4>
-                <p class="text-muted">{% t interests.visualization.description %}</p>
+                <h4 class="service-heading">{{ t('interests.visualization.title') }}</h4>
+                <p class="text-muted">{{ t('interests.visualization.description') }}</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">{% t interests.literature.title %}</h4>
-                <p class="text-muted">{% t interests.literature.description %}</p>
+                <h4 class="service-heading">{{ t('interests.literature.title') }}</h4>
+                <p class="text-muted">{{ t('interests.literature.description') }}</p>
             </div>
         </div>
     </div>
@@ -161,36 +161,36 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{% t publications.title %}</h2>
-                <h3 class="section-subheading text-muted">{% t publications.subtitle %}</h3>
+                <h2 class="section-heading">{{ t('publications.title') }}</h2>
+                <h3 class="section-subheading text-muted">{{ t('publications.subtitle') }}</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="publication-item">
-                    <h4><a href="https://pytorch.org/blog/introducing-pytorch-monarch/">{% t publications.papers.monarch.title %}</a></h4>
-                    <p class="text-muted">{% t publications.papers.monarch.authors %}</p>
-                    <p class="text-muted">{% t publications.papers.monarch.venue %}</p>
+                    <h4><a href="https://pytorch.org/blog/introducing-pytorch-monarch/">{{ t('publications.papers.monarch.title') }}</a></h4>
+                    <p class="text-muted">{{ t('publications.papers.monarch.authors') }}</p>
+                    <p class="text-muted">{{ t('publications.papers.monarch.venue') }}</p>
                 </div>
                 <div class="publication-item">
-                    <h4><a href="https://arxiv.org/pdf/1901.04452">{% t publications.papers.foundationdb.title %}</a></h4>
-                    <p class="text-muted">{% t publications.papers.foundationdb.authors %}</p>
-                    <p class="text-muted">{% t publications.papers.foundationdb.venue %}</p>
+                    <h4><a href="https://arxiv.org/pdf/1901.04452">{{ t('publications.papers.foundationdb.title') }}</a></h4>
+                    <p class="text-muted">{{ t('publications.papers.foundationdb.authors') }}</p>
+                    <p class="text-muted">{{ t('publications.papers.foundationdb.venue') }}</p>
                 </div>
                 <div class="publication-item">
-                    <h4><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=99578a3a1d23e6693ef8c0827269742849cc7eb2">{% t publications.papers.mobility.title %}</a></h4>
-                    <p class="text-muted">{% t publications.papers.mobility.authors %}</p>
-                    <p class="text-muted">{% t publications.papers.mobility.venue %}</p>
+                    <h4><a href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=99578a3a1d23e6693ef8c0827269742849cc7eb2">{{ t('publications.papers.mobility.title') }}</a></h4>
+                    <p class="text-muted">{{ t('publications.papers.mobility.authors') }}</p>
+                    <p class="text-muted">{{ t('publications.papers.mobility.venue') }}</p>
                 </div>
                 <div class="publication-item">
-                    <h4><a href="https://arxiv.org/pdf/1711.02781">{% t publications.papers.rubystar.title %}</a></h4>
-                    <p class="text-muted">{% t publications.papers.rubystar.authors %}</p>
-                    <p class="text-muted">{% t publications.papers.rubystar.venue %}</p>
+                    <h4><a href="https://arxiv.org/pdf/1711.02781">{{ t('publications.papers.rubystar.title') }}</a></h4>
+                    <p class="text-muted">{{ t('publications.papers.rubystar.authors') }}</p>
+                    <p class="text-muted">{{ t('publications.papers.rubystar.venue') }}</p>
                 </div>
                 <div class="publication-item">
-                    <h4><a href="https://link.springer.com/chapter/10.1007/978-3-319-40259-8_36">{% t publications.papers.tievis.title %}</a></h4>
-                    <p class="text-muted">{% t publications.papers.tievis.authors %}</p>
-                    <p class="text-muted">{% t publications.papers.tievis.venue %}</p>
+                    <h4><a href="https://link.springer.com/chapter/10.1007/978-3-319-40259-8_36">{{ t('publications.papers.tievis.title') }}</a></h4>
+                    <p class="text-muted">{{ t('publications.papers.tievis.authors') }}</p>
+                    <p class="text-muted">{{ t('publications.papers.tievis.venue') }}</p>
                 </div>
             </div>
         </div>
@@ -202,8 +202,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{% t hobbies.title %}</h2>
-                <h3 class="section-subheading text-muted">{% t hobbies.subtitle %}</h3>
+                <h2 class="section-heading">{{ t('hobbies.title') }}</h2>
+                <h3 class="section-subheading text-muted">{{ t('hobbies.subtitle') }}</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -212,32 +212,32 @@
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">{% t hobbies.reading.title %}</h4>
-                <p class="text-muted">{% t hobbies.reading.description %}</p>
+                <h4 class="service-heading">{{ t('hobbies.reading.title') }}</h4>
+                <p class="text-muted">{{ t('hobbies.reading.description') }}</p>
             </div>
             <div class="col-md-3 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">{% t hobbies.calligraphy.title %}</h4>
-                <p class="text-muted">{% t hobbies.calligraphy.description %}</p>
+                <h4 class="service-heading">{{ t('hobbies.calligraphy.title') }}</h4>
+                <p class="text-muted">{{ t('hobbies.calligraphy.description') }}</p>
             </div>
             <div class="col-md-3 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-futbol-o fa-stack-1x fa-inverse"></i> <!-- Using futbol-o as a generic sport icon -->
                 </span>
-                <h4 class="service-heading">{% t hobbies.badminton.title %}</h4>
-                <p class="text-muted">{% t hobbies.badminton.description %}</p>
+                <h4 class="service-heading">{{ t('hobbies.badminton.title') }}</h4>
+                <p class="text-muted">{{ t('hobbies.badminton.description') }}</p>
             </div>
             <div class="col-md-3 col-sm-6">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
                     <i class="fa fa-music fa-stack-1x fa-inverse"></i>
                 </span>
-                <h4 class="service-heading">{% t hobbies.drums.title %}</h4>
-                <p class="text-muted">{% t hobbies.drums.description %}</p>
+                <h4 class="service-heading">{{ t('hobbies.drums.title') }}</h4>
+                <p class="text-muted">{{ t('hobbies.drums.description') }}</p>
             </div>
         </div>
     </div>
@@ -248,8 +248,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{% t projects.title %}</h2>
-                <h3 class="section-subheading text-muted">{% t projects.subtitle %}</h3>
+                <h2 class="section-heading">{{ t('projects.title') }}</h2>
+                <h3 class="section-subheading text-muted">{{ t('projects.subtitle') }}</h3>
             </div>
         </div>
         <div class="row">
@@ -263,8 +263,8 @@
                     <img src="{{ '/image/SparkUI.png' | relative_url }}" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>{% t projects.spark.title %}</h4>
-                    <p class="text-muted">{% t projects.spark.description %}</p>
+                    <h4>{{ t('projects.spark.title') }}</h4>
+                    <p class="text-muted">{{ t('projects.spark.description') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-9 portfolio-item">
@@ -277,8 +277,8 @@
                     <img src="{{ '/image/TieVis_s.jpg' | relative_url }}" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>{% t projects.tievis.title %}</h4>
-                    <p class="text-muted">{% t projects.tievis.description %}</p>
+                    <h4>{{ t('projects.tievis.title') }}</h4>
+                    <p class="text-muted">{{ t('projects.tievis.description') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-9 portfolio-item">
@@ -291,8 +291,8 @@
                     <img src="{{ '/image/MobilityViewer.png' | relative_url }}" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>{% t projects.mobility.title %}</h4>
-                    <p class="text-muted">{% t projects.mobility.description %}</p>
+                    <h4>{{ t('projects.mobility.title') }}</h4>
+                    <p class="text-muted">{{ t('projects.mobility.description') }}</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-9 portfolio-item">
@@ -305,8 +305,8 @@
                     <img src="{{ '/image/database.jpg' | relative_url }}" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>{% t projects.minisql.title %}</h4>
-                    <p class="text-muted">{% t projects.minisql.description %}</p>
+                    <h4>{{ t('projects.minisql.title') }}</h4>
+                    <p class="text-muted">{{ t('projects.minisql.description') }}</p>
                 </div>
             </div>
         </div>
