@@ -113,10 +113,34 @@ hobbies:
     description: '我的博客文章见 <a href="https://qcngt.com" target="_blank" rel="noopener noreferrer">青菜年糕汤</a>。'
   calligraphy:
     title: 书法
-    description: '我的书法作品集<a href="{{ ''/calligraphy/'' | relative_url }}">在此</a>。'
+    description: '我的书法作品集<a href="/zh/calligraphy/">在此</a>。'
   badminton:
     title: 羽毛球
     description: '享受快节奏的羽球运动。'
   drums:
     title: 架子鼓
     description: '练习节奏与节拍。'
+
+calligraphy_page:
+  meta:
+    title: "林涛 | 书法"
+    description: "林涛的书法作品"
+    lang: "zh"
+  nav:
+    home_label: "首页"
+    home_href: "/zh/"
+    zh_label: "中文"
+    en_label: "EN"
+  hero:
+    title: "书法"
+  gallery:
+    title: "书法作品"
+  works:
+    cheng:
+      title: "乘物游心"
+      meta: "楷书 · 扇面 · 乘物游心 · 归园田居其一"
+      alt: "乘物游心扇面楷书作品"
+    qiuxing:
+      title: "秋兴八首"
+      meta: "楷书 · 五条屏 · 秋兴八首"
+      alt: "楷书秋兴八首五条屏作品"

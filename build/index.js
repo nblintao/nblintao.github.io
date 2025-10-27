@@ -161,6 +161,9 @@ async function build() {
       translations[lang] = yaml.load(content);
     }
 
+    // Load calligraphy template
+    const calligraphyTemplate = fs.readFileSync('_pages/calligraphy.html', 'utf8');
+
     // 3. Generate HTML for each language
     for (const lang of config.languages) {
       const langDir = lang === config.defaultLanguage ? '' : lang;
@@ -170,6 +173,16 @@ async function build() {
       const html = generateHTML(lang, translations, config);
       await fs.writeFile(path.join(outputDir, 'index.html'), html);
       console.log(`✅ Generated ${lang} homepage: ${langDir || '/'}/index.html`);
+
+      const t = (key) => getTranslation(translations[lang], key);
+      const calligraphyHtml = processTemplate(calligraphyTemplate, t, lang);
+      const calligraphyDir = path.join(outputDir, 'calligraphy');
+      await fs.ensureDir(calligraphyDir);
+      await fs.writeFile(path.join(calligraphyDir, 'index.html'), calligraphyHtml);
+      const calligraphyLogPath = lang === config.defaultLanguage
+        ? '/calligraphy/index.html'
+        : `/${lang}/calligraphy/index.html`;
+      console.log(`✅ Generated ${lang} calligraphy page: ${calligraphyLogPath}`);
     }
 
     // 4. Process and copy CSS

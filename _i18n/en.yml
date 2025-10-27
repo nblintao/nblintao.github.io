@@ -113,10 +113,34 @@ hobbies:
     description: 'Read my blog posts at <a href="https://qcngt.com" target="_blank" rel="noopener noreferrer">青菜年糕汤</a>.'
   calligraphy:
     title: Calligraphy
-    description: 'View my calligraphy works <a href="{{ ''/calligraphy/'' | relative_url }}">here</a>.'
+    description: 'View my calligraphy works <a href="/calligraphy/">here</a>.'
   badminton:
     title: Badminton
     description: 'Enjoying the fast-paced shuttlecock sport.'
   drums:
     title: Drumming
     description: 'Practicing rhythms and beats.'
+
+calligraphy_page:
+  meta:
+    title: "Tao Lin | Calligraphy"
+    description: "Calligraphy works by Tao Lin"
+    lang: "en"
+  nav:
+    home_label: "Home"
+    home_href: "/"
+    zh_label: "中文"
+    en_label: "EN"
+  hero:
+    title: "Calligraphy"
+  gallery:
+    title: "Calligraphy Works"
+  works:
+    cheng:
+      title: "Cheng Wu You Xin"
+      meta: "Regular script · Folding fan · Returning to My Farm (I)"
+      alt: "Cheng Wu You Xin calligraphy on a folding fan"
+    qiuxing:
+      title: "Autumn Meditations"
+      meta: "Regular script · Five hanging panels · Du Fu's 'Autumn Meditations'"
+      alt: "Calligraphy of Du Fu's Autumn Meditations in regular script"

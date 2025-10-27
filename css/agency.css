@@ -773,3 +773,77 @@ body {
 .publication-item:last-child {
     margin-bottom: 0;
 }
+
+.calligraphy-page header {
+  text-align: center;
+}
+
+.calligraphy-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)), url('../img/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.calligraphy-hero .intro-text .intro-heading {
+  text-transform: none;
+}
+
+.calligraphy-gallery .calligraphy-card {
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calligraphy-gallery .calligraphy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.calligraphy-gallery .calligraphy-image img {
+  width: 100%;
+  display: block;
+}
+
+.calligraphy-gallery .calligraphy-card-body {
+  padding: 24px 28px 28px;
+  text-align: left;
+}
+
+.calligraphy-gallery .calligraphy-card-body h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.calligraphy-gallery .calligraphy-meta {
+  text-transform: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.calligraphy-gallery .calligraphy-card-body p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.calligraphy-gallery .calligraphy-card-body p.zh {
+  color: #555;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .calligraphy-gallery .calligraphy-card {
+    margin-bottom: 30px;
+  }
+}
