@@ -14,8 +14,8 @@
   "dependencies": {
     "csso": "^5.0.5",
     "fs-extra": "^11.3.2",
-    "glob": "^11.0.3",
-    "js-yaml": "^4.1.0",
+    "glob": "^11.1.0",
+    "js-yaml": "^4.1.1",
     "nunjucks": "^3.2.4"
   }
 }
