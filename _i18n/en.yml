@@ -79,6 +79,11 @@ publications:
   title: "Publications"
   subtitle: "My academic publications"
   papers:
+    engram:
+      title: "A Collision-Free Hot-Tier Extension for Engram-Style Conditional Memory: A Controlled Study of Training Dynamics"
+      authors: "T Lin"
+      venue: "arXiv preprint arXiv:2601.16531, 2026"
+      link: "https://arxiv.org/abs/2601.16531"
     mobility:
       title: "Mobility viewer: An Eulerian approach for studying urban crowd flow"
       authors: "Y Ma, T Lin, Z Cao, C Li, F Wang, W Chen"

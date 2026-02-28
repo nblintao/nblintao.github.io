@@ -79,6 +79,11 @@ publications:
   title: "论文"
   subtitle: "我的学术论文"
   papers:
+    engram:
+      title: "用于 Engram 风格条件记忆的无碰撞热层扩展：训练动态的受控研究"
+      authors: "T Lin"
+      venue: "arXiv preprint arXiv:2601.16531, 2026"
+      link: "https://arxiv.org/abs/2601.16531"
     mobility:
       title: "Mobility viewer: 研究城市人群流动的欧拉方法"
       authors: "Y Ma, T Lin, Z Cao, C Li, F Wang, W Chen"
